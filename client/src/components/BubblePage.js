@@ -3,6 +3,7 @@ import { axiosWithAuth } from "../utils/axiosWithAuth";
 
 import Bubbles from "./Bubbles";
 import ColorList from "./ColorList";
+import "../appStyles.scss";
 
 const BubblePage = (props) => {
   const [colorList, setColorList] = useState([]);
@@ -17,12 +18,12 @@ const BubblePage = (props) => {
       })
       .catch((err) => {
         console.log(err);
-        alert("Error fetching colors. PLease try again.", props);
+        alert("Error fetching colors. Please try again.", props);
       });
   }, [props]);
 
   return (
-    <div className='bubble-page-style'>
+    <div className='BubblePageStyle'>
       <ColorList colors={colorList} updateColors={setColorList} />
       <Bubbles colors={colorList} />
     </div>
