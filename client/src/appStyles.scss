@@ -1,0 +1,36 @@
+.LoginForm {
+  color: white;
+  height: 400px;
+  width: 400px;
+  padding: 16px 20px 10px 20px;
+  border-radius: 20px;
+  background-color: black;
+  margin: 50px auto;
+
+  form {
+    input {
+      width: 200px;
+      height: 44px;
+      border-radius: 8px;
+      margin: 10px auto;
+    }
+
+    button {
+      width: 200px;
+      height: 48px;
+      border-radius: 8px;
+      margin: 24px auto;
+      background-color: hotpink;
+      color: whitesmoke;
+      font-size: 24px;
+    }
+  }
+}
+
+.BubblePageStyle {
+  display: flex;
+  color: white;
+  background-color: black;
+}
+
+//username: 'Lambda School', password: 'i<3Lambd4'
